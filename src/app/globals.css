@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  /* Background Colors */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1E1E1E;
+  --bg-hover: #252525;
+  --bg-active: #2A2A2A;
+
+  /* Border Colors */
+  --border-subtle: #2A2A2A;
+  --border-medium: #3A3A3A;
+  --border-strong: #4A4A4A;
+
+  /* Text Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #A3A3A3;
+  --text-tertiary: #737373;
+  --text-disabled: #525252;
+
+  /* Accent Colors */
+  --accent-blue: #0EA5E9;
+  --accent-purple: #8B5CF6;
+  --accent-green: #10B981;
+  --accent-red: #EF4444;
+  --accent-amber: #F59E0B;
+
+  /* Agent Role Colors */
+  --agent-ceo: #8B5CF6;
+  --agent-coo: #0EA5E9;
+  --agent-content: #EC4899;
+  --agent-sales: #10B981;
+  --agent-developer: #F59E0B;
+  --agent-finance: #06B6D4;
+  --agent-client-success: #8B5CF6;
+
+  /* Shadows & Elevation */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 20px rgba(14, 165, 233, 0.3); /* For accents */
+}
+
+@theme {
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-bg-hover: var(--bg-hover);
+  --color-bg-active: var(--bg-active);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-medium: var(--border-medium);
+  --color-border-strong: var(--border-strong);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-disabled: var(--text-disabled);
+
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-green: var(--accent-green);
+  --color-accent-red: var(--accent-red);
+  --color-accent-amber: var(--accent-amber);
+
+  --color-agent-ceo: var(--agent-ceo);
+  --color-agent-coo: var(--agent-coo);
+  --color-agent-content: var(--agent-content);
+  --color-agent-sales: var(--agent-sales);
+  --color-agent-developer: var(--agent-developer);
+  --color-agent-finance: var(--agent-finance);
+  --color-agent-client-success: var(--agent-client-success);
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
